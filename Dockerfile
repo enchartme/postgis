@@ -6,3 +6,5 @@ RUN apt-get update \
     postgresql-17-postgis-3-scripts \
   && rm -rf /var/lib/apt/lists/*
 
+
+COPY --chmod=0755 postgis-prestart.sh /usr/local/bin/postgis-prestart
